@@ -22,3 +22,8 @@ https://openscad.org/
 
 - Chinese training material: https://openhome.cc/zh-tw/openscad/
 - OpenSCAD User Manual in WikiBooks: https://en.wikibooks.org/wiki/OpenSCAD_User_Manual
+
+# CadQuery - one new player in programmmatic CAD after OpenSCAD
+
+https://cadquery.readthedocs.io/en/latest/index.html
+
