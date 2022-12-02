@@ -20,3 +20,5 @@ https://www.freecadweb.org/
 
 https://openscad.org/
 
+- Chinese training material: https://openhome.cc/zh-tw/openscad/
+- OpenSCAD User Manual in WikiBooks: https://en.wikibooks.org/wiki/OpenSCAD_User_Manual
