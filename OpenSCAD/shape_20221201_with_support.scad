@@ -49,12 +49,12 @@ half_shape();
 
 mirror([10,0,0]) half_shape();
 
-translate([0,3,-3]) cube([4,4,5], center=true);
-translate([0,20,-3]) cube([4,4,5], center=true);
-translate([0,40,-3]) cube([4,4,5], center=true);
-translate([20,13,-3]) cube([4,4,5], center=true);
-translate([-20,13,-3]) cube([4,4,5], center=true);
-translate([20,30,-3]) cube([4,4,5], center=true);
-translate([-20,30,-3]) cube([4,4,5], center=true);
+translate([0,3,-1]) cube([1,1,5], center=true);
+translate([0,20,-1]) cube([1,1,5], center=true);
+translate([0,40,-1]) cube([1,1,5], center=true);
+translate([20,13,-1]) cube([1,1,5], center=true);
+translate([-20,13,-1]) cube([1,1,5], center=true);
+translate([20,30,-1]) cube([1,1,5], center=true);
+translate([-20,30,-1]) cube([1,1,5], center=true);
 
 }
