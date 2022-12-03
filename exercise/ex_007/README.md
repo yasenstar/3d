@@ -7,7 +7,8 @@
 Analysis:
 
 - Practice `hull()` to join shapes, however it's only join in straight line
-- Mathematically, the "Inscribed line" should be considered from the "large" exteria circle, just give manually estimate using the center `[120,170]` with `radius = 130` to draw one cylinder and be trimmed from the hulled shape. (here need further investigation on making those inscribed lines in real mathimatically correct.)
+- Mathematically, the "Inscribed line" should be considered from the "large" exteria circle (not provide the radius value in the chart), just give manually estimate using the center `[120,170]` with `radius = 130` to draw one cylinder and be trimmed from the hulled shape. 
+  - [ ] here need further investigation on making those inscribed lines in real mathimatically correct.
 - Other holes are easy parts after previous exercise. 
 
 ## Code
