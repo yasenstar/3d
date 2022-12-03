@@ -7,6 +7,7 @@
 Analysis:
 
 - Try draw `polygon()` instead of `hull()`
+- [ ] Rendering warning: Object may not be a valid 2-manifold and may need repair! 
 
 ## Code
 
