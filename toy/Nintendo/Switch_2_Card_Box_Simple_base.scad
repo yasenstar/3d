@@ -44,45 +44,45 @@ difference() {
     cylinder(6,1,1);
 }
 
-// cover box
-difference() {
-    translate([0,30,60])
-    rotate([180,0,0])
-    color("cyan")
-    difference() {
-        minkowski() {
-            cube([20,30,9]);
-            cylinder(3);
-        }
-        
-        for (i = [0:1:1]) {
-            #translate([3+i*10, 3, 5]) cube([4,24,15]);
-        }
-    }
-    
-    // trim the hinge overlapping part
-    translate([0.5,31,49])
-    rotate([0,90,0])
-        #cylinder(5,2,2);
-
-    translate([13.5,31,49])
-    rotate([0,90,0])
-        #cylinder(5,2,2);
-
-}
-
-// hinge in cover
-translate([7.5,31,49])
-rotate([0,90,0])
-color("cyan")
-    cylinder(5,2,2);
-translate([7.5,34,49])
-rotate([0,90,0])
-color("cyan")
-difference() {
-    cylinder(5,2.5,2.5);
-    cylinder(5,1,1);
-}
+//// cover box
+//difference() {
+//    translate([0,30,60])
+//    rotate([180,0,0])
+//    color("cyan")
+//    difference() {
+//        minkowski() {
+//            cube([20,30,9]);
+//            cylinder(3);
+//        }
+//        
+//        for (i = [0:1:1]) {
+//            #translate([3+i*10, 3, 5]) cube([4,24,15]);
+//        }
+//    }
+//    
+//    // trim the hinge overlapping part
+//    translate([0.5,31,49])
+//    rotate([0,90,0])
+//        #cylinder(5,2,2);
+//
+//    translate([13.5,31,49])
+//    rotate([0,90,0])
+//        #cylinder(5,2,2);
+//
+//}
+//
+//// hinge in cover
+//translate([7.5,31,49])
+//rotate([0,90,0])
+//color("cyan")
+//    cylinder(5,2,2);
+//translate([7.5,34,49])
+//rotate([0,90,0])
+//color("cyan")
+//difference() {
+//    cylinder(5,2.5,2.5);
+//    cylinder(5,1,1);
+//}
 
 // logo text
 translate([2,1,22])
