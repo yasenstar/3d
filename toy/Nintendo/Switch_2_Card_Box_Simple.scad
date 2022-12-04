@@ -1,6 +1,6 @@
 // Dimension of Nintindo Switch Game Card: 20mm x 30mm x 3mm
 // Author: Xiaoqi Zhao
-// Date: 2022-12-03
+// Date: 2022-12-03, Updated: 2022-12-04
 
 $fn=100;
 
