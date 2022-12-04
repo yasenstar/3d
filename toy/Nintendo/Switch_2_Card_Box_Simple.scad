@@ -85,9 +85,9 @@ difference() {
 }
 
 // logo text
-translate([2,1,22])
-rotate([90,60,0])
+translate([2.5,1,12])
+rotate([90,0,0])
 color("red")
-scale(0.4)
+scale(0.3)
 linear_extrude(8)
-text("Nintendo");
+text("Nintendo", font="Impact");
