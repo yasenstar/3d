@@ -15,7 +15,7 @@ module book(page_thick, pages, length, width, book_name) {
         }
 
         rotate([0,-20,0])
-        translate([2,length-10,2])
+        translate([20,length-10,2])
         color("red")
         linear_extrude(0.5)
         scale(0.2)
@@ -30,4 +30,4 @@ module book(page_thick, pages, length, width, book_name) {
     }
 }
 
-book(0.05, 40, 30, 14.8, "New Book");
+book(0.05, 200, 30, 14.8, "New Book");
