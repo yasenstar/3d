@@ -2,7 +2,7 @@
 // Author: Xiaoqi Zhao
 // Date: 2022-12-05
 
-module snowman(r_foot, r_body, r_head, ) {
+module snowman(r_foot, r_body, r_head) {
     union(){
 
         $fn=100;
@@ -10,13 +10,13 @@ module snowman(r_foot, r_body, r_head, ) {
         // three snow balls    
         color("white") {
             translate([0,0,r_foot/2]) sphere(r_foot);
-            translate([0,0,r_foot+r_body/2-1]) sphere(r_body);
+            translate([0,0,r_foot+r_body/2-r_head/5]) sphere(r_body);
             translate([0,0,r_foot+r_body+r_head]) sphere(r_head);
         }
         
         // nose
         color("orange")
-            translate([r_head-1,0,r_foot+r_body+r_head-r_head/5])rotate([0,90,0]) cylinder(r_head+2,r_head/5,0);
+            translate([r_head-1,0,r_foot+r_body+r_head-r_head/5]) rotate([0,90,0]) cylinder(r_head+2,r_head/5,0);
         
         // eyes
         color("black") {
