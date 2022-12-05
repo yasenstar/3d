@@ -23,11 +23,11 @@ https://openscad.org/
 - Chinese training material: https://openhome.cc/zh-tw/openscad/
 - OpenSCAD User Manual in WikiBooks: https://en.wikibooks.org/wiki/OpenSCAD_User_Manual
 
-# CadQuery - one new player in programmmatic CAD after OpenSCAD, leverages Python
+## CadQuery - one new player in programmmatic CAD after OpenSCAD, leverages Python
 
 https://cadquery.readthedocs.io/en/latest/index.html
 
-# OpenJSCAD - same as OpenSCAD, but leverages the syntax of Javascript
+## OpenJSCAD - same as OpenSCAD, but leverages the syntax of Javascript
 
 http://openjscad.azurewebsites.net/
 
