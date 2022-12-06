@@ -1,3 +1,6 @@
+// Author: Xiaoqi Zhao
+// Date: 2022-12-06
+
 module blue_hole() {
         difference() {
             circle(30);

@@ -1,3 +1,6 @@
+// Author: Xiaoqi Zhao
+// Date: 2022-12-06
+
 module special_hole() {
     intersection() {
     union() {
@@ -19,6 +22,6 @@ linear_extrude(10) {
                 circle(26);
         }
         circle(17);
-        translate([164.9,0])           special_hole();
+        translate([164.9,0]) special_hole();
     }
 }
