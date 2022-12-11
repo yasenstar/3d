@@ -1,7 +1,7 @@
 union() {
 
     color("blue")
-        translate([-25,6,3])
+        translate([-25,6,4])
         rotate([75,0,0])
         scale(0.8)
         linear_extrude(10)
@@ -20,7 +20,7 @@ union() {
             text("5G Kuper 2022", font="Impact");
 
     color("red")
-        translate([-28,13,3])
+        translate([-28,13,4])
         scale(0.5)
             linear_extrude(5)
             text("From: Eason", font="Impact");
