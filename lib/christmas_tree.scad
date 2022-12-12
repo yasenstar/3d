@@ -44,4 +44,4 @@ module christmasTree(type,height) {
 }
     
 $fn=100;
-christmasTree(3,50);
+//christmasTree(3,50);
