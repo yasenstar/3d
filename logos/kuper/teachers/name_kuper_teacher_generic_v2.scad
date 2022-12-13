@@ -1,3 +1,5 @@
+use <../../../lib/christmas_tree.scad>
+
 union() {
 
     color("red")
@@ -27,26 +29,7 @@ union() {
 
 }
 
-// Christmas Tree
-// Author: Xiaoqi Zhao
-// Date: 2022-12-05
-
-translate([-10,8,2.5])
-scale(0.8) {
-    height = 50;
-    color("brown"){
-    cylinder(height,2,0);
-    }
-    color("green") {
-    for (i=[5:0.5:height]) {
-        length = height-i;
-        for (j=[i*5:25:355+i*5]) {
-            translate([0,0,i])
-            rotate([0,85,j]) cylinder(length/2.5,0.2,0.2);
-            }
-        }
-    }
-}
+translate([-10,8,2.5]) scale(0.8) christmasTree(4,50);
 
 // Snowman
 
@@ -64,7 +47,7 @@ color("white") {
 }
 
 color("orange")
-    translate([4,0,27])rotate([0,90,0]) cylinder(7,1,0);
+    translate([4,0,27])rotate([0,90,0]) cylinder(6,1.5,0.1);
 
 color("black") {
     translate([4,2,29]) sphere(.7);
@@ -80,18 +63,18 @@ translate([0,5,18])
 rotate([-40,0,0])
 color("brown")
 union() {
-    cylinder(15,0.7,.7);
-    translate([0,0,10]) rotate([-30,0,0]) cylinder(4,0.5,0.5);
-    translate([0,0,10]) rotate([35,0,0]) cylinder(6,0.6,0.6);
+    cylinder(13,1,1);
+    translate([0,0,7]) rotate([-30,0,0]) cylinder(5,0.7,0.7);
+    translate([0,0,7]) rotate([35,0,0]) cylinder(6,0.6,0.6);
 }
 
 translate([0,-5,18])
 rotate([40,0,0])
 color("brown")
 union() {
-    cylinder(15,0.7,.7);
-    translate([0,0,10]) rotate([-30,0,0]) cylinder(4,0.5,0.5);
-    translate([0,0,10]) rotate([35,0,0]) cylinder(6,0.6,0.6);
+    cylinder(13,1,1);
+    translate([0,0,7]) rotate([-30,0,0]) cylinder(5,0.6,0.6);
+    translate([0,0,7]) rotate([35,0,0]) cylinder(6,0.7,0.7);
 }
 
 }
@@ -111,12 +94,13 @@ module star(numberOfPoints, pointLength, width, height) {
     }
 }
 
-translate([-10,8,42])
+translate([-10.3,8,33]) {
 rotate([90,-15,180])
-scale(0.2)
+scale(0.4)
 star(5, 15, 5, 2);
 
-translate([-10,8,42])
+
 rotate([90,-21,0])
-scale(0.2)
+scale(0.4)
 star(5, 15, 5, 2);
+}
