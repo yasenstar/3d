@@ -20,8 +20,6 @@ https://www.freecadweb.org/
 
 https://openscad.org/
 
-- Chinese training material: https://openhome.cc/zh-tw/openscad/
-- OpenSCAD User Manual in WikiBooks: https://en.wikibooks.org/wiki/OpenSCAD_User_Manual
 
 ## CadQuery - one new player in programmmatic CAD after OpenSCAD, leverages Python
 
@@ -34,3 +32,9 @@ http://openjscad.azurewebsites.net/
 available in Microsoft Store inside Windows
 
 Now changes name to JSCAD, here is the User Group: https://openjscad.nodebb.com/
+
+# Resources for OPENSCAD
+
+- Chinese training material: https://openhome.cc/zh-tw/openscad/
+- OpenSCAD User Manual in WikiBooks: https://en.wikibooks.org/wiki/OpenSCAD_User_Manual
+- Libraries of OpenSCAD: https://github.com/openscad/MCAD, able to use `git submodule add URL PATH` to add to your git repo
