@@ -69,9 +69,9 @@ module christmasTree(type,height) {
             cylinder(height/2,height/8,0);
         }
         color("green") {
-            translate([0,0,height/10]) {
+            translate([0,0,height/5]) {
                 layerHeight = height/5;
-                cylinder(layerHeight*0.1,height/3*0.45,height/3);
+                cylinder(layerHeight*0.1,height/3*0.2,height/3);
                 translate([0,0,layerHeight*0.1]) cylinder(layerHeight,height/3,height/3*0.6);
                 translate([0,0,layerHeight*0.9]) cylinder(layerHeight*0.1,height/3*0.45,height/3*0.8);
                 translate([0,0,layerHeight]) cylinder(layerHeight,height/3*0.8,height/3*0.45);

@@ -10,7 +10,7 @@ module snowman(r_foot, r_body, r_head, type) {
         // three snow balls    
         color("white") {
             translate([0,0,r_foot/2]) sphere(r_foot);
-            translate([0,0,r_foot+r_body/2-r_head/5]) sphere(r_body);
+            translate([0,0,r_foot+r_body/2]) sphere(r_body);
             translate([0,0,r_foot+r_body+r_head]) sphere(r_head);
         }
         
@@ -28,6 +28,7 @@ module snowman(r_foot, r_body, r_head, type) {
         color("yellow") {
             translate([0,0,r_foot+r_body+r_head+r_head/5*4]) cylinder(r_head,r_head,r_head-2);
             translate([0,0,r_foot+r_body+r_head+r_head/5*3]) cylinder(r_head/5*2,r_head*2-1,r_head-1);
+            translate([0,0,r_foot+r_body+r_head+r_head/5*2]) cylinder(r_head/5,r_head/2,r_head*2-1);
         }
         
         if (type==1) {
@@ -36,9 +37,9 @@ module snowman(r_foot, r_body, r_head, type) {
             rotate([-40,0,0])
             color("brown")
             union() {
-                cylinder(r_head*3,0.7,0.7);
-                translate([0,0,r_head*2]) rotate([-30,0,0]) cylinder(r_head-1,0.5,0.5);
-                translate([0,0,r_head*2]) rotate([35,0,0]) cylinder(r_head+1,0.6,0.6);
+                cylinder(r_head*2,0.9,0.9);
+                translate([0,0,r_head*1.1]) rotate([-30,0,0]) cylinder(r_head-2,0.7,0.7);
+                translate([0,0,r_head*1.3]) rotate([35,0,0]) cylinder(r_head+1,0.6,0.6);
             }
             
             // right arm
@@ -46,9 +47,9 @@ module snowman(r_foot, r_body, r_head, type) {
             rotate([40,0,0])
             color("brown")
             union() {
-                cylinder(r_head*3,0.7,0.7);
-                translate([0,0,r_head*2]) rotate([-30,0,0]) cylinder(r_head-1,0.5,0.5);
-                translate([0,0,r_head*2]) rotate([35,0,0]) cylinder(r_head+1,0.6,0.6);
+                cylinder(r_head*2,0.9,0.9);
+                translate([0,0,r_head*1.1]) rotate([-30,0,0]) cylinder(r_head-2,0.6,0.6);
+                translate([0,0,r_head*1.3]) rotate([35,0,0]) cylinder(r_head+1,0.7,0.7);
             }
         }
         else if (type==2) {
@@ -74,4 +75,4 @@ module snowman(r_foot, r_body, r_head, type) {
     }
 }
 
-snowman(14, 10, 7, 2);
+snowman(14, 10, 7, 1);
