@@ -7,6 +7,7 @@ Type of tree:
   2 - simple, single shape
   3 - simple, four layers
   4 - no tree branch
+  5 - add branch in simple tree back, with leaves supporting
 */
 
 module christmasTree(type,height) {
@@ -63,7 +64,25 @@ module christmasTree(type,height) {
             }
         }
     }
+    else if (type==5) { // tree with stem
+        color("brown"){
+            cylinder(height/2,height/8,0);
+        }
+        color("green") {
+            translate([0,0,height/10]) {
+                layerHeight = height/5;
+                cylinder(layerHeight*0.1,height/3*0.45,height/3);
+                translate([0,0,layerHeight*0.1]) cylinder(layerHeight,height/3,height/3*0.6);
+                translate([0,0,layerHeight*0.9]) cylinder(layerHeight*0.1,height/3*0.45,height/3*0.8);
+                translate([0,0,layerHeight]) cylinder(layerHeight,height/3*0.8,height/3*0.45);
+                translate([0,0,layerHeight*2*0.95]) cylinder(layerHeight*0.11,height/3*0.25,height/3*0.65);
+                translate([0,0,layerHeight*2]) cylinder(layerHeight*0.9,height/3*0.65,height/3*0.25);
+                translate([0,0,layerHeight*3*0.93]) cylinder(layerHeight*0.09,height/3*0.2,height/3*0.4);
+                translate([0,0,layerHeight*3*0.96]) cylinder(layerHeight,height/3*0.4,0.02);
+            }
+        }
+    }
 }
     
 $fn=100;
-christmasTree(4,50);
+christmasTree(5,50);
