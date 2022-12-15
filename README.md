@@ -38,3 +38,4 @@ Now changes name to JSCAD, here is the User Group: https://openjscad.nodebb.com/
 - Chinese training material: https://openhome.cc/zh-tw/openscad/
 - OpenSCAD User Manual in WikiBooks: https://en.wikibooks.org/wiki/OpenSCAD_User_Manual
 - Libraries of OpenSCAD: https://github.com/openscad/MCAD, able to use `git submodule add URL PATH` to add to your git repo
+- Unicode Emoji Charts full list: https://unicode.org/emoji/charts/full-emoji-list.html, add emoji and choose font `Segoe UI Emoji`
