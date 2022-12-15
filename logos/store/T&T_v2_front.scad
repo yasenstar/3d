@@ -25,29 +25,15 @@ scale(1.5) {
 
     difference() {
 
-        linear_extrude(1)
+        linear_extrude(2)
             difference() {
                 circle(10);
                 translate([0,8]) circle(1);
             }
 
-        translate([0,0,0.7])
-        linear_extrude(0.3)
-            textFront();
-        }
-        
-    translate([25,0,0])
-    difference() {
-
-        linear_extrude(1)
-            difference() {
-                circle(10);
-                translate([0,8]) circle(1);
-            }
-
-        translate([0,0,0.7])
-            linear_extrude(0.3)
+        translate([0,0,1.6])
+            linear_extrude(0.4)
             textBack();
-        }  
-        
+        }
+
     }
