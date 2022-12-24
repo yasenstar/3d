@@ -25,13 +25,13 @@ union() {
         import("volvo.svg");
 }
 
-// Excavator
+// Volvo Excavator
 translate([12,5,-14])
 rotate([90,0,0])
 linear_extrude(10)
     import("Product_Volvo Wheel Loader_Black.svg");
 
-// Excavator
+// Volvo Truck - US
 translate([0,45,-5])
 rotate([90,0,-20])
 linear_extrude(10)
