@@ -1,3 +1,5 @@
+$fn = 100;
+
 difference() {
 
     difference() {
