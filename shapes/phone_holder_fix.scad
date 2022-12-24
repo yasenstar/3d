@@ -1,3 +1,7 @@
+// fix of the broken part of phone holder
+// auther: Xiaoqi Zhao
+// date: 2022/12/24
+
 $fn = 100;
 
 difference() {
